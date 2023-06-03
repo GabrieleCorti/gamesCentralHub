@@ -1,0 +1,42 @@
+.game-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.game-item-list {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+
+.game-item {
+  width: 100%;
+  margin: 1.5rem 0;
+}
+
+.name-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.game-name {
+  text-transform: uppercase;
+}
+
+.link-logut {
+  text-decoration: underline;
+  color: var(--primary-color);
+}
+
+.game-info {
+  margin-bottom: 1rem;
+}
+
+.label {
+  margin-bottom: 0.5rem;
+}

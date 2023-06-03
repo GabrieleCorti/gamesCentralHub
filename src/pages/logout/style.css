@@ -1,0 +1,25 @@
+.logout {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.logout_title {
+  padding: 3rem 2.25rem;
+}
+
+.action_wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.exit-btn-yes {
+  margin-right: 5%;
+}
+.exit-btn-no {
+  margin-left: 5%;
+}

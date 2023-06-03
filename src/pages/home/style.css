@@ -1,0 +1,25 @@
+.login {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.login_action {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title-container {
+  padding: 2.5rem 2rem 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.start-game {
+  text-align: center;
+  margin: 0.75rem 0 2rem;
+}

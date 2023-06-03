@@ -1,0 +1,41 @@
+.done-page {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.done-title {
+  margin-bottom: 1.75rem;
+}
+
+.first-done-input {
+  margin-bottom: 0.75rem;
+}
+
+.back-wrapper {
+  margin-top: 2rem;
+}
+
+.error-wrapper {
+  margin-top: 1rem;
+}
+
+.error {
+  color: cadetblue;
+  font-weight: 300;
+  text-decoration: underline;
+}
+
+.done-btn {
+  display: block;
+  margin-top: 2rem;
+}
