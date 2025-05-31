@@ -4,18 +4,25 @@ import { games } from "../../secretData/games";
 import mySvg from "../../static/svg/alien.svg";
 import "./style.css";
 
+const CURRENT_VERSION = 2.0;
+
 const Home: React.FC = () => {
   const [name, setName] = useState("");
   const navigate = useNavigate();
+
   useEffect(() => {
+    const version = localStorage.getItem("version");
     const isPlayer = localStorage.getItem("player");
-    if (isPlayer) {
+    if (isPlayer && version === String(CURRENT_VERSION)) {
       navigate("games");
+    } else {
+      localStorage.clear();
     }
   }, [navigate]);
 
   const startGame = useCallback(() => {
     if (name) {
+      localStorage.setItem("version", JSON.stringify(CURRENT_VERSION));
       localStorage.setItem("player", JSON.stringify(name));
       localStorage.setItem("gamesState", JSON.stringify(games));
       navigate("games");
